@@ -1,4 +1,37 @@
-@media (max-width: 780px) {
+@media all and (max-width: 780px) {
+     /* mentors-section */
+     .mentors-heading-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 17px 16px 0 16px;
+    }
+    .mentors-heading {
+      font-size: 14px;
+      margin: 0;
+    }
+    .mentors-see-more {
+      display: flex;
+      white-space: nowrap;
+    }
+    .mentors {
+     margin: 0 16px 23px 16px; 
+     align-items: end;
+    }
+    .mentors-slider {
+      display: none;
+    }
+    .mentors-right-side {
+      display: none;
+    }
+    .mentors-paragraph {
+      display: flex;
+    }
+    .menotrs-right-side-responsive {
+      display: flex;
+    }
+
+
     .accordion {
       margin: 14px 16px 21px 16px;
     }
