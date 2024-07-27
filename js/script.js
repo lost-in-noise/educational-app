@@ -35,6 +35,7 @@ function toTheNextSlide() {
 
 setInterval(toTheNextSlide, 3000);
 
+
 // new courses favourite
 const fullHeart = document.querySelectorAll(".new-courses-emptyheart");
 
