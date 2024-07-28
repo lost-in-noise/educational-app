@@ -138,15 +138,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 
 window.onscroll = function () {
-  if (window.innerWidth > 780) {
-    if (
-      document.body.scrollTop > 100 ||
-      document.documentElement.scrollTop > 100
-    ) {
-      scrollTopBtn.style.display = "block";
-    } else {
-      scrollTopBtn.style.display = "none";
-    }
+  if (
+    document.body.scrollTop > 100 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    scrollTopBtn.style.display = "block";
   } else {
     scrollTopBtn.style.display = "none";
   }
