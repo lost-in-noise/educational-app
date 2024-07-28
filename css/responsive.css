@@ -1,0 +1,85 @@
+@media all and (max-width: 780px) {
+     /* mentors-section */
+     .mentors-heading-div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 17px 16px 0 16px;
+    }
+    .mentors-heading {
+      font-size: 14px;
+      margin: 0;
+    }
+    .mentors-see-more {
+      display: flex;
+      white-space: nowrap;
+    }
+    .mentors {
+     margin: 0 16px 23px 16px; 
+     align-items: end;
+    }
+    .mentors-slider {
+      display: none;
+    }
+    .mentors-right-side {
+      display: none;
+    }
+    .mentors-paragraph {
+      display: flex;
+    }
+    .menotrs-right-side-responsive {
+      display: flex;
+    }
+
+    /* students-experience-section */
+    .students-experience {
+      display: block;
+    }
+    .students-arrow-left {
+      display: none;
+    }
+    .students-students {
+      display: none;
+    }
+    .students-exp-heading {
+      display: flex;
+      justify-content: center;
+    }
+    .students-heading {
+      font-size: 14px;
+      margin: 15px 36px 0 36px;
+      width: 305px;
+    }
+    .students-exp-responsive-div {
+      display: flex;
+      text-align: center;
+      justify-content: space-between;
+    }
+    .students-exp-description {
+      margin: 0;
+    }
+    .students-exp-image-responsive {
+      display: flex;
+      margin: 0 0 20.3px 16px;
+    }
+    .students-exp-btn {
+      width: 100px;
+      font-size: 14px;
+      padding: 6px 12px;
+      margin: 0;
+    }
+    .students-paragraph  {
+      display: none;
+    }
+    .students-exp-responsive-paragraph {
+      display: flex;
+      font-size: 10px;
+      width: 193px;
+      height: 84px;
+      margin: 14px 19px 20px 36px;
+      text-align: left;
+    }
+
+    .students-exp-arrow-right {
+      display: none;
+    }
