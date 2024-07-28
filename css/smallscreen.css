@@ -1,100 +1,102 @@
 @media (max-width: 1285px) {
-    .recomendations-wrapper {
-      margin: 14px 16px;
-      max-width: 1140px;
-      width: 100%;
-    }
-    .more {
-      padding-right: 0px;
-    }
+  .recomendations-wrapper {
+    margin: 14px 16px;
+    max-width: 1140px;
+    width: 100%;
   }
-  
-  @media (max-width: 1080px) {
-    .review-card:nth-last-child(4) {
-      display: none;
-    }
-    .students-reviews {
-      gap: 8px;
-      justify-content: space-around;
-    }
-    .review-card {
-      padding: 12px 14px;
-    }
+  .more {
+    padding-right: 0px;
   }
-  
-  @media (max-width: 780px) {
-    .accordion {
-      margin: 14px 16px 21px 16px;
-    }
-    .accordion-title {
-      font-size: 14px;
-      line-height: 14px;
-    }
-    .faq-title {
-      height: 12px;
-      margin-bottom: 7px;
-    }
-    .faq {
-      font-size: 10px;
-    }
-    .accordion-item {
-      padding-top: 7px;
-      padding-bottom: 7px;
-      border-bottom: 0.5px solid #3a3aba99;
-    }
-    .accordion-header p {
-      line-height: 12px;
-      font-size: 12px;
-    }
-    .accordion-content {
-      padding-top: 4px;
-    }
-    .accordion-content p {
-      font-size: 10px;
-    }
-    #scrollTopBtn {
-      display: none;
-    }
-    .recomendations-section {
-      height: 226px;
-    }
-    .avatar-studentname h6 {
-      font-size: 12px;
-      line-height: 12px;
-    }
-    .review-card p {
-      font-size: 10px;
-      line-height: 16px;
-      padding-top: 0px;
-      padding-bottom: 0px;
-    }
-  
-    .students-reviews {
-      justify-content: space-between;
-      margin-top: 14px;
-      height: auto;
-    }
-    .avatar-studentname {
-      flex-wrap: wrap;
-    }
-    .five-stars {
-      max-width: 40px;
-      width: 100%;
-    }
-    .review-card {
-      gap: 10px;
-      height: 144px;
-    }
+}
+
+@media (max-width: 1080px) {
+  .review-card:nth-last-child(4) {
+    display: none;
   }
-  @media (max-width: 575px) {
-    .review-card:nth-child(3) {
-      display: none;
-    }
-    .students-reviews {
-      gap: 0px;
-    }
-    .review-card {
-      width: 47%;
-    }
+  .students-reviews {
+    gap: 8px;
+    justify-content: space-around;
   }
-  
+  .review-card {
+    padding: 12px 14px;
+  }
+}
+
+@media (max-width: 780px) {
+  .accordion {
+    margin: 14px 16px 21px 16px;
+  }
+  .accordion-title {
+    font-size: 14px;
+    line-height: 14px;
+  }
+  .faq-title {
+    height: 12px;
+    margin-bottom: 7px;
+  }
+  .faq {
+    font-size: 10px;
+  }
+  .accordion-item {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-bottom: 0.5px solid #3a3aba99;
+  }
+  .accordion-header p {
+    line-height: 12px;
+    font-size: 12px;
+  }
+  .accordion-content {
+    padding-top: 4px;
+  }
+  .accordion-content p {
+    font-size: 10px;
+  }
+  #scrollTopBtn {
+    display: none;
+  }
+  .recomendations-section {
+    height: 226px;
+  }
+  .avatar-studentname h6 {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .review-card p {
+    font-size: 10px;
+    line-height: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .student-name img {
+    width: 30px;
+  }
+  .students-reviews {
+    justify-content: space-between;
+    margin-top: 14px;
+    height: auto;
+  }
+  .avatar-studentname {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .five-stars {
+    max-width: 40px;
+    width: 100%;
+  }
+  .review-card {
+    gap: 10px;
+    height: 144px;
+  }
+}
+@media (max-width: 575px) {
+  .review-card:nth-child(3) {
+    display: none;
+  }
+  .students-reviews {
+    gap: 0px;
+  }
+  .review-card {
+    width: 48%;
+  }
+}
