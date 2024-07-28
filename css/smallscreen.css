@@ -20,11 +20,14 @@
   .review-card {
     padding: 12px 14px;
   }
+  .accordion {
+    margin: 14px 50px 21px;
+  }
 }
 
 @media (max-width: 780px) {
   .accordion {
-    margin: 14px 16px 21px 16px;
+    margin: 14px 16px 21px;
   }
   .accordion-title {
     font-size: 14px;
