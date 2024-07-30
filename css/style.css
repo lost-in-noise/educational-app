@@ -221,8 +221,6 @@ ul {
   display: grid;
   grid-template-columns: 0% 14% 3% 1fr 2.8% 12% 0%;
   grid-template-rows: 40% 1fr 40%;
-  justify-content: center;
-  overflow: hidden;
 }
 
 .new-courses-arrow-left {
@@ -289,6 +287,10 @@ ul {
   cursor: pointer;
 }
 
+.new-courses-card-image-responsive {
+  display: none;
+}
+
 .new-courses-card-image {
   grid-row: 2;
 }
@@ -300,8 +302,10 @@ ul {
 
 .new-courses-stars {
   grid-row: 4;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-top: 60px;
+  width: 106px;
+  height: 14px;
 }
 
 .new-courses-h4 {
@@ -328,6 +332,7 @@ ul {
 
 .couple-text {
   margin-left: 8px;
+  font-size: 12px;
 }
 
 .button-center {
@@ -344,6 +349,7 @@ ul {
   padding: 10px 44px 6px 44px;
   font-family: "BPG Nino Mtavruli";
   margin-top: 21px;
+  box-shadow: 4px 4px 10px 0px #4949E940;
 }
 
 /* recomendations styles */
