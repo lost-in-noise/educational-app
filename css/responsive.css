@@ -74,7 +74,6 @@
     .students-exp-responsive-paragraph {
       display: flex;
       font-size: 10px;
-      width: 193px;
       height: 84px;
       margin: 14px 19px 20px 36px;
       text-align: left;
@@ -84,4 +83,94 @@
       display: none;
     }
 
+    /* new-courses-section */
+    .new-courses-cards-grid {
+      margin-right: 16px;
+    }
+    .new-courses-full-card {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      padding: 0 0 24px 16px;
+      grid-template-columns: 50px 1fr 1fr;
+    }    
+    .new-courses {
+      align-items: normal;
+    }
+    .new-courses-card {
+      grid-template-rows: 10% 15% 1fr 1%;
+      grid-template-columns: 45% 1fr 15%;
+      width: 140px;
+      height: 102px;
+    }
+    .new-courses-entire-card {
+      width: 163px;
+      height: 270px;
+    }
+    .new-courses-heading {
+      margin: 14px 16px;
+      justify-content: space-between;
+    }
+    .new-courses-h1 {
+      font-size: 14px;
+      margin-right: 0;
+    }
+    .new-courses-more {
+      font-size: 10px;
+      color: #FFFFFFB2;
+    }
+    .new-courses-arrow-left,
+    .new-courses-arrow-right,
+    .purple-shadow,
+    .new-courses-dots1,
+    .new-courses-dots2,
+    .new-courses-card-image {
+      display: none;
+    }
+    .new-courses-card-image-responsive {
+      display: flex;
+      margin-top: 12px;
+    }
+    .new-courses-emptyheart, .new-courses-heart-full {
+      width: 32px;
+      height: 32px;
+      border: none;
+      padding: 7px;
+    }
+    .new-courses-stars {
+      width: 70px;
+      height: 9px;
+      margin-top: 0;
+      margin-left: 5px;
+    }
+    .new-courses-couples {
+      display: flex;
+      flex-direction: column;
+      margin-left: 45px;
+    }
+    .second-couple {
+      margin: 0;
+    }
+    .new-courses-h4 {
+      font-size: 12px;
+      margin-top: 17px;
+      margin-bottom: 8px;
+      margin-left: 12px;
+    }
+    .new-courses-information {
+      margin: 0;
+    }
+    .new-courses-icons {
+      width: 8px;
+      height: 10px;
+    }
+    .couple-text {
+      font-size: 8px;
+      margin-left: 10px;
+    }
+    .new-courses-btn {
+      margin-top: 13px;
+      padding: 7px 20px;
+    }
   }

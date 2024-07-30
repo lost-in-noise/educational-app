@@ -74,6 +74,10 @@ function updateCarousel() {
     } else {
       image.style.display = "none";
     }
+    const mediaQuery = window.matchMedia('(max-width: 780px)');
+            if (mediaQuery.matches) {
+                image.style.display = 'flex';
+            } 
   });
 }
 
@@ -107,3 +111,19 @@ document
   .querySelector(".new-courses-arrow-right")
   .addEventListener("click", next);
 
+  //new courses responsive 
+  function moveLineBreak() {
+    const courseTitles = document.querySelectorAll('.new-courses-h4');
+    const isSmallScreen = window.matchMedia('(max-width: 780px)').matches;
+
+    courseTitles.forEach(courseTitle => {
+      if (isSmallScreen) {
+        courseTitle.innerHTML = 'Back-end development <br /> with Python and Django';
+      } else {
+        courseTitle.innerHTML = 'Back-end development with <br /> Python and Django';
+      }
+    });
+  }
+
+  window.addEventListener('resize', moveLineBreak);
+  window.addEventListener('load', moveLineBreak);
