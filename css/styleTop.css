@@ -6,6 +6,9 @@
 html {
   font-size: 62.5%;
 }
+body {
+  overflow-x: hidden;
+}
 .padding-div {
   padding: 0 5rem;
 }
@@ -55,7 +58,9 @@ html {
   font-size: 1.4rem;
   font-weight: 400;
 }
-
+.smaller-screen-details {
+  display: none;
+}
 .search-signin {
   display: flex;
   gap: 1.8rem;
@@ -109,9 +114,10 @@ html {
 }
 .section-one-div {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 7.6rem;
+
   max-width: 124rem;
   margin: 0 auto;
   background-image: url(../images/top-sect-photos/Vector\ 208.svg),
@@ -179,6 +185,7 @@ html {
   margin-bottom: 3rem;
   overflow: hidden;
   transition: transform 0.7s ease;
+  padding: 0 1.6rem;
 }
 .box {
   width: 19rem;
@@ -258,12 +265,16 @@ html {
 .requested-courses-sec {
   display: grid;
   max-width: 124rem;
-  height: 39.8rem;
+  /* height: 39.2rem; */
   /* width: 86.1%; */
   margin: 0 auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: repeat(8, 1fr); */
   /* overflow-x: auto; */
   gap: 2rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  /* touch-action: none; */
   position: relative;
 }
 
@@ -364,6 +375,7 @@ html {
   line-height: 2rem;
   margin-top: 1.6rem;
   max-width: 21rem;
+  white-space: normal;
 }
 .course-details {
   display: flex;
@@ -401,6 +413,13 @@ html {
   border: none;
   background-color: #dcf343;
   border-radius: 0.6rem;
+}
+.details-link,
+.details-link:link,
+.details-link:active {
+  color: #000;
+  font-size: 1.6rem;
+  font-family: "BPG Nino Mtavruli";
 }
 .heart {
   background-color: red;

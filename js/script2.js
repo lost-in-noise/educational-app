@@ -14,6 +14,8 @@ const rightIconEmpty = document.querySelector(".right-click-empty");
 const coursesBox = document.querySelector(".requested-courses-sec");
 const cardsEachBox = document.querySelectorAll(".each-course");
 
+const burgerDiv = document.querySelector(".burger-div");
+const navigation = document.querySelector(".nav-list");
 // hearts
 const heartBox = document.querySelectorAll(".heart");
 const fullHeartCourses = document.querySelectorAll(".full-heart");
@@ -206,4 +208,27 @@ document.addEventListener("DOMContentLoaded", function () {
   mainBox.addEventListener("mouseleave", function () {
     startInterval();
   });
+});
+
+// burger menu
+
+burgerDiv.addEventListener("click", function () {
+  navigation.classList.toggle("display-nav");
+});
+
+// touchscroll
+
+let startX;
+let scrollLeft;
+
+coursesBox.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].pageX - coursesBox.offsetLeft;
+  scrollLeft = coursesBox.scrollLeft;
+});
+
+coursesBox.addEventListener("touchmove", (e) => {
+  e.preventDefault();
+  const x = e.touches[0].pageX - coursesBox.offsetLeft;
+  const walk = x - startX;
+  coursesBox.scrollLeft = scrollLeft - walk;
 });

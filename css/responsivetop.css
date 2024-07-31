@@ -1,0 +1,299 @@
+/* BELOW 784px */
+/**************************/
+
+@media (max-width: 49em) {
+  /* Navigation Section */
+  .nav {
+    max-height: 4.2rem;
+  }
+  .logo-img {
+    height: 3.14rem;
+    width: 3.14rem;
+  }
+  .title-img {
+    width: 9.3rem;
+    height: 2.2rem;
+  }
+  .logo-name {
+    gap: 0.75rem;
+    padding-left: 1.7rem;
+  }
+  .nav-list,
+  .search-signin {
+    display: none;
+  }
+  .smaller-screen-details {
+    display: flex;
+    gap: 2.36rem;
+    margin-right: 2.1rem;
+  }
+  .log-in {
+    padding-right: 0.34rem;
+  }
+
+  /* First Section */
+
+  .section-one-div {
+    gap: 3rem;
+    max-width: 124rem;
+    padding-left: 1.6rem;
+
+    background-image: url(../images/top-sect-photos/Vector\ 208.svg),
+      url(../images/top-sect-photos/Vector\ 207.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 40%, 22%;
+    /* background-position: 5rem 25rem, 100% top; */
+    background-position: 20% 100%, 100% top;
+  }
+  .section-one-text {
+    gap: 1.4rem;
+  }
+  .all-text {
+    gap: 1.2rem;
+    margin-top: 2.7rem;
+    width: 18.5rem;
+  }
+  .success-heading {
+    font-size: 2rem;
+  }
+  .free-learning-heading {
+    font-size: 1.6rem;
+  }
+  .section-one-para {
+    display: none;
+  }
+  .learn-more-btn {
+    padding: 0.7rem 2rem;
+    font-size: 1.2rem;
+  }
+  .success-img {
+    width: 25.2rem;
+    height: 18.3rem;
+    margin-top: 4rem;
+  }
+  /* Section two */
+  .programms-box {
+    /* padding-left: 1.6rem; */
+    margin-bottom: 1.4rem;
+    gap: 1.2rem;
+    justify-content: center;
+  }
+  .box {
+    width: 9rem;
+    height: 5.5rem;
+    border-radius: 0.6rem;
+  }
+
+  .programms-heading {
+    font-size: 1.4rem;
+    margin-bottom: 1.7rem;
+  }
+  .programm-name,
+  .programm-name:link,
+  .programm-name:active {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  /* section three */
+  .padding-div {
+    padding: 0 1.6rem;
+  }
+  .yellow-dots,
+  .left-circles,
+  .right-circles,
+  .next-btn-div {
+    display: none;
+  }
+  .section-three {
+    padding-bottom: 2.4rem;
+  }
+  .requested-courses-sec {
+    /* height: 27rem; */
+    /* max-height: 37.5rem; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    /* overflow-x: hidden; */
+  }
+  .sect-three-container {
+    max-width: 134rem;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+  .requested-courses-heading {
+    font-size: 1.4rem;
+    padding: 1.4rem 0;
+  }
+  .each-course {
+    min-width: 16.3rem;
+    padding: 1.2rem 1.1rem 1.5rem 1.2rem;
+  }
+  .img-box {
+    /* width: 24.4rem; */
+    /* width: 14rem; */
+    height: 10rem;
+  }
+  .star-emojiS {
+    height: 0.9rem;
+  }
+
+  .empty-heart,
+  .full-heart {
+    padding: 0.7rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  .course-name {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+    max-width: 21rem;
+  }
+  .course-details {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .details-text {
+    text-align: left;
+    display: flex;
+  }
+  .details-box {
+    margin-top: 1.2rem;
+  }
+  .details-left,
+  .details-right {
+    width: calc(70%);
+    gap: 0.3rem;
+  }
+  .details-left .details-text:nth-child(1) {
+    order: 2;
+  }
+  .details-btn {
+    padding: 0.7rem, 1.8rem;
+    height: 2.4rem;
+    width: 10rem;
+  }
+  .details-link,
+  .details-link:link,
+  .details-link:active {
+    font-size: 1.2rem;
+  }
+
+  /* DISPLAY NAV */
+  .nav {
+    position: relative;
+  }
+  .display-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: #f2f6ff;
+    padding-left: 0;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.5rem;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    right: 0%;
+  }
+}
+/* BELOW 560px */
+/**************************/
+
+@media (max-width: 35em) {
+  .section-one-div {
+    gap: 0;
+  }
+  .section-one-text {
+  }
+  .programm-name,
+  .programm-name:link,
+  .programm-name:active {
+    font-size: 1.2rem;
+    line-height: 1.51rem;
+  }
+  .box {
+    width: 9rem;
+    height: 5.5rem;
+    border-radius: 0.6rem;
+  }
+
+  .programms-box {
+    /* padding-left: 1.6rem; */
+    /* max-width: 46.4rem; */
+    margin: 0 0 1.6rem 1.5rem;
+  }
+  .box {
+    flex: 0 0 9rem;
+    height: 5.5rem;
+  }
+}
+/* BELOW 464px */
+/**************************/
+@media (max-width: 29em) {
+  .section-two {
+    /* padding: 0 0 0 1.6rem; */
+  }
+  .section-one-div {
+    height: 21.59rem;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    background-position: 10% 90%, 100% top;
+    background-image: url(../images/top-sect-photos/Vector\ 208.svg),
+      url(../images/top-sect-photos/Vector\ 207.svg),
+      url("../images/top-sect-photos/20\ 1.png");
+    background-size: 40%, 22%, 60%;
+    /* background-position: 5rem 25rem, 100% top; */
+    background-position: 0 95%, 100% top, right 4rem;
+  }
+  .section-one-text {
+    /* position: absolute; */
+    /* background-color: red; */
+    /* padding-top: 2.7rem; */
+  }
+  .success-img-block {
+    /* position: absolute; */
+    /* background-color: green; */
+    display: none;
+  }
+
+  .programms-box {
+    max-width: 46.4rem;
+    /* margin: 0 1.5rem; */
+  }
+  .box {
+    flex: 0 0 9rem;
+    height: 5.5rem;
+  }
+  .success-img-block {
+    /* flex-basis: 25.2rem; */
+    width: 25.2rem;
+    /* height: 18.3rem; */
+    /* margin: 7.4rem 7.7rem 2rem 0; */
+  }
+  .success-img {
+    margin: 8.2rem 0 0.8rem 0;
+  }
+  .programms-box {
+    /* padding-left: 1.6rem; */
+    /* max-width: 46.4rem; */
+    margin: 0 0 1.6rem 0;
+  }
+  .section-two {
+    padding-left: 1.6rem;
+  }
+
+  .img-box {
+    height: 10.2rem;
+  }
+
+  .padding-div {
+    padding: 0 0 0 1.6rem;
+  }
+}
