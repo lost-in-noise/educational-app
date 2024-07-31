@@ -3,8 +3,16 @@
 
 @media (max-width: 49em) {
   /* Navigation Section */
+  .header {
+    height: 4.2rem;
+    width: 100vw;
+  }
   .nav {
-    max-height: 4.2rem;
+    /* max-height: 4.2rem; */
+    height: 4.2rem;
+  }
+  .section-one {
+    margin-top: 4.2rem;
   }
   .logo-img {
     height: 3.14rem;
