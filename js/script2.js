@@ -19,6 +19,7 @@ const navigation = document.querySelector(".nav-list");
 // hearts
 const heartBox = document.querySelectorAll(".heart");
 const fullHeartCourses = document.querySelectorAll(".full-heart");
+
 let it = 1;
 let card = 0;
 

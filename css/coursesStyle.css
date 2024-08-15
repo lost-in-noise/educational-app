@@ -1,0 +1,303 @@
+.paddingdiv {
+  /* padding: 0 3rem; */
+}
+body {
+  background-color: #dee0f6;
+}
+.section-one-courses {
+  margin-top: 8rem;
+
+  background-color: #4949e9;
+  overflow-y: hidden;
+}
+.nav-link-active {
+  color: #4949e9;
+}
+.heading-div {
+  max-width: 140rem;
+  margin: 0 auto;
+  height: 11.1rem;
+  position: relative;
+}
+.circles {
+  position: absolute;
+  top: -33%;
+  left: 8.1rem;
+}
+.dots-box {
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+}
+.courses {
+  color: #fff;
+  font-family: "BPG Mrgvlovani Caps 2010";
+  font-size: 3.8rem;
+  font-weight: 400;
+  line-height: 32px;
+  text-align: center;
+  padding: 4rem 0 0 0;
+}
+.main-courses {
+  color: #fff;
+
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 12px;
+  margin: 2.2rem 0 0 31.2rem;
+}
+/* Section TWO */
+.section-two-courses {
+  border-bottom: 1px solid #9099da;
+  background-color: #f5f9ff;
+  box-shadow: 0 0 10px #9099da;
+}
+
+.sect-two-div {
+  max-width: 123.8rem;
+  margin: 0 auto;
+  padding: 1rem 0 0.8rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.first-three-filters {
+  display: flex;
+  gap: 3.6rem;
+  justify-content: center;
+  align-items: center;
+}
+.filter {
+  padding: 1.1rem 0 0.9rem 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.programs-span:hover,
+.arrow-span:hover,
+.each-prog:hover {
+  cursor: pointer;
+}
+.each-prog:hover {
+  background-color: rgb(231, 231, 221);
+}
+.programs-span {
+  color: #000;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 1.4rem;
+}
+.arrow-down,
+.arrow {
+  height: 1.6rem;
+  width: 0.8rem;
+}
+.arrow-courses {
+  width: 0.6rem;
+  height: 1rem;
+  margin: 0 0.6rem;
+}
+.prog-box {
+  position: absolute;
+  background-color: #fff;
+  top: 120%;
+  left: -30%;
+  padding: 3.3rem 2rem 2.7rem 2.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  z-index: 500;
+}
+.box-tick {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.prog-name {
+  color: #9099da;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  /* text-wrap: nowrap; */
+}
+.rating {
+  margin-right: 1rem;
+}
+.each-prog {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+.sort-heading {
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 1.5rem 0 0.8rem 0;
+}
+.hidden {
+  display: none;
+}
+/* Section 3 */
+.section-three-courses {
+}
+.filter-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3.6rem;
+}
+.filter-items-box {
+  display: flex;
+  gap: 2.4rem;
+  padding: 1.8rem 0 2rem 0;
+  flex-wrap: wrap;
+}
+.each-filter-item {
+  background-color: #fff;
+  padding: 1rem 1.3rem 1rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  border-radius: 6px;
+  border: 1px #dee0f6;
+}
+.each-item {
+  color: #7c88e0;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+.close-btn-div:hover {
+  cursor: pointer;
+}
+.close-btn {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.clean-btn {
+  color: #7c88e0;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 0.95rem 1rem;
+  border: none;
+  margin-top: 1.8rem;
+  border-radius: 6px;
+  border: 1px #dee0f6;
+}
+.clean-btn:hover {
+  cursor: pointer;
+}
+/* Section Four */
+.section-four-courses {
+  margin-bottom: 3.6rem;
+}
+.courses-inner-div {
+  max-width: 124.1rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2.6rem;
+  /* grid-template-rows: 1fr 1fr 1fr; */
+}
+.stars-div {
+  position: absolute;
+  left: 2%;
+  bottom: 1%;
+  z-index: 5;
+}
+.stars {
+  height: 1.4rem;
+  width: 1.4rem;
+}
+.star-rating {
+  color: #fff;
+  font-family: "BPG Glaho";
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.img-box-courses {
+  width: 100%;
+  height: 17.7rem;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  /* background-size: cover; */
+  border-radius: 0.8rem;
+}
+.img-box-courses::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/courses/Rectangle\ 4174.svg");
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+/* Section 5 */
+.section-five-courses {
+  margin-bottom: 6rem;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.pagination-div {
+  display: flex;
+}
+.arrow-img {
+  height: 1.6rem;
+  width: 0.8rem;
+}
+
+.each-page {
+  margin-right: 1rem;
+  background-color: #dee7ff;
+  border-radius: 50%;
+  padding: 1.1rem 1.3rem;
+  color: #000;
+}
+.each-page:first-child {
+  margin-left: 1rem;
+}
+.page-num:hover,
+.arr:hover {
+  cursor: pointer;
+}
+
+.page-num {
+  /* color: #000; */
+  text-align: center;
+  font-family: "BPG Nino Mtavruli";
+  font-size: 1.8rem;
+  font-weight: 400;
+  /* background-color: #dee7ff; */
+
+  /* padding: 1.1rem 1.3rem; */
+  border-radius: 50%;
+
+  width: 0.9rem;
+  height: 1.4rem;
+  width: 3.8rem;
+  height: 3.8rem;
+}
+.active-page {
+  background-color: #5b5bfd;
+  color: #fff;
+}
