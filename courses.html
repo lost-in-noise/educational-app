@@ -35,7 +35,7 @@
         <div class="navigation">
           <ul class="nav-list">
             <li class="nav-item">
-              <a href="#" class="nav-link">კურსები</a>
+              <a href="#" class="nav-link nav-link-active">კურსები</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">მენტორები</a>
@@ -95,7 +95,11 @@
         <h2 class="courses">კურსები</h2>
         <span class="main-courses"
           >მთავარი
-          <img src="images/courses/arrow.svg" alt="arrow" class="arrow" />
+          <img
+            src="images/courses/arrow.svg"
+            alt="arrow"
+            class="arrow-courses"
+          />
           კურსები</span
         >
         <img src="images/courses/right-dots.svg" class="dots-box" />
@@ -116,8 +120,8 @@
                     class="arrow-up arrow hidden"
                 /></span>
               </div>
-              <div class="prog-box hidden">
-                <div class="each-prog">
+              <div class="prog-box hidden programs-box">
+                <div class="each-prog each-offered-program">
                   <img
                     src="images/courses/empty-rect.svg"
                     class="box-tick empty-box"
@@ -127,7 +131,7 @@
                     class="box-tick full-box hidden"
                   /><span class="prog-name">UI/UX დიზაინი</span>
                 </div>
-                <div class="each-prog">
+                <div class="each-prog each-offered-program">
                   <img
                     src="images/courses/empty-rect.svg"
                     class="box-tick empty-box"
@@ -137,7 +141,7 @@
                     class="box-tick full-box hidden"
                   /><span class="prog-name">გრაფიკული დიზაინი</span>
                 </div>
-                <div class="each-prog">
+                <div class="each-prog each-offered-program">
                   <img
                     src="images/courses/empty-rect.svg"
                     class="box-tick empty-box"
@@ -147,7 +151,7 @@
                     class="box-tick full-box hidden"
                   /><span class="prog-name">3D ბლენდერი</span>
                 </div>
-                <div class="each-prog">
+                <div class="each-prog each-offered-program">
                   <img
                     src="images/courses/empty-rect.svg"
                     class="box-tick empty-box"
@@ -157,7 +161,7 @@
                     class="box-tick full-box hidden"
                   /><span class="prog-name">Front-End Development</span>
                 </div>
-                <div class="each-prog">
+                <div class="each-prog each-offered-program">
                   <img
                     src="images/courses/empty-rect.svg"
                     class="box-tick empty-box"
@@ -180,7 +184,7 @@
                     class="arrow-up arrow hidden"
                 /></span>
               </div>
-              <div class="prog-box hidden">
+              <div class="prog-box hidden mentors-box">
                 <div class="each-prog">
                   <img
                     src="images/courses/empty-rect.svg"
@@ -244,7 +248,7 @@
                     class="arrow-up arrow hidden"
                 /></span>
               </div>
-              <div class="prog-box hidden">
+              <div class="prog-box hidden level-box">
                 <div class="each-prog">
                   <img
                     src="images/courses/empty-rect.svg"
@@ -283,175 +287,185 @@
               <div class="filter-inner">
                 <span class="programs-span">სორტირება</span
                 ><span class="arrow-span"
-                  ><img src="images/courses/arrow-down.svg" class="arrow-down"
+                  ><img
+                    src="images/courses/arrow-down.svg"
+                    class="arrow-down arrow" /><img
+                    src="images/courses/arrow-up.svg"
+                    class="arrow-up arrow hidden"
                 /></span>
               </div>
               <div class="prog-box hidden">
-                <h4 class="sort-heading">ხანგრძლივობა</h4>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name">1 თვე</span>
+                <div class="duration-box">
+                  <h4 class="sort-heading">ხანგრძლივობა</h4>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name">1 თვე</span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name">3 თვე</span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name">6 თვე</span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name">9 თვე</span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name">12 თვე</span>
+                  </div>
                 </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name">3 თვე</span>
+                <div class="sort-by-date">
+                  <h4 class="sort-heading">თარიღი</h4>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name new-old">ახალი-ძველი</span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name old-new">ძველი-ახალი</span>
+                  </div>
                 </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name">6 თვე</span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name">9 თვე</span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name">12 თვე</span>
-                </div>
-                <h4 class="sort-heading">თარიღი</h4>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name new-old">ახალი-ძველი</span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name old-new">ძველი-ახალი</span>
-                </div>
-                <h4 class="sort-heading">შეფასება</h4>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name"
-                    ><span class="rating">1.0</span
-                    ><img src="images/courses/Vector.svg" class="star-img"
-                  /></span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name"
-                    ><span class="rating">2.0</span
-                    ><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img"
-                  /></span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name"
-                    ><span class="rating">3.0</span
-                    ><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img"
-                  /></span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name"
-                    ><span class="rating">4.0</span
-                    ><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img"
-                  /></span>
-                </div>
-                <div class="each-prog">
-                  <img
-                    src="images/courses/empty-rect.svg"
-                    class="box-tick empty-box"
-                  />
-                  <img
-                    src="images/courses/clicked-rect.svg"
-                    class="box-tick full-box hidden"
-                  /><span class="prog-name"
-                    ><span class="rating">5.0</span
-                    ><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img" /><img
-                      src="images/courses/Vector.svg"
-                      class="star-img"
-                  /></span>
+                <div class="ratings-box">
+                  <h4 class="sort-heading">შეფასება</h4>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name"
+                      ><span class="rating">1.0</span
+                      ><img src="images/courses/Vector.svg" class="star-img"
+                    /></span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name"
+                      ><span class="rating">2.0</span
+                      ><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img"
+                    /></span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name"
+                      ><span class="rating">3.0</span
+                      ><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img"
+                    /></span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name"
+                      ><span class="rating">4.0</span
+                      ><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img"
+                    /></span>
+                  </div>
+                  <div class="each-prog">
+                    <img
+                      src="images/courses/empty-rect.svg"
+                      class="box-tick empty-box"
+                    />
+                    <img
+                      src="images/courses/clicked-rect.svg"
+                      class="box-tick full-box hidden"
+                    /><span class="prog-name"
+                      ><span class="rating">5.0</span
+                      ><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img" /><img
+                        src="images/courses/Vector.svg"
+                        class="star-img"
+                    /></span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -582,25 +596,26 @@
     <section class="section-five-courses">
       <div class="padding-div">
         <div class="pagination">
-          <div class="arr arrow-left">
+          <!-- <div class="arr arrow-left">
             <img src="images/courses/pag-arr-left.svg" class="arrow-img" />
-          </div>
+          </div> -->
           <div class="pagination-div">
-            <div class="each-page">
+            <!-- <div class="each-page">
               <span class="page-num active-page">1</span>
-            </div>
-            <div class="each-page"><span class="page-num">2</span></div>
+            </div> -->
+
+            <!-- <div class="each-page"><span class="page-num">2</span></div>
             <div class="each-page"><span class="page-num">3</span></div>
             <div class="each-page"><span class="page-num">4</span></div>
             <div class="each-page"><span class="page-num">5</span></div>
             <div class="each-page">
               <img src="images/courses/three-dots.svg" />
             </div>
-            <div class="each-page"><span class="page-num">10</span></div>
+            <div class="each-page"><span class="page-num">10</span></div> -->
           </div>
-          <div class="arr arrow-right">
+          <!-- <div class="arr arrow-right">
             <img src="images/courses/pag-arr-right.svg" class="arrow-img" />
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
