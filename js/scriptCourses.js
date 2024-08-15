@@ -305,9 +305,9 @@ function pageNumberAll(cardNums, filteredData) {
   paginationDiv.innerHTML = "";
   let pageNums = Math.ceil(cardNums / 12);
   for (let i = 0; i < pageNums; i++) {
-    let pagesBelow = `<div class="each-page"><span class="page-num">${
-      i + 1
-    }</span></div>
+    let pagesBelow = `<div class="each-page ${
+      i === 0 ? "active-page" : ""
+    }"><span class="page-num">${i + 1}</span></div>
 `;
     paginationDiv.insertAdjacentHTML("beforeend", pagesBelow);
   }
