@@ -706,7 +706,7 @@ h4 {
 .student-rec-card p {
   color: #000;
   text-overflow: ellipsis;
-  font-family: "BPG Glaho";
+  font-family: "BPG Glaho", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -723,7 +723,7 @@ h4 {
 .grey-cycles-inrec {
   position: absolute;
   bottom: 104px;
-  left: 0;
+  left: -114px;
 }
 .grey-dots-inrec {
   position: absolute;
