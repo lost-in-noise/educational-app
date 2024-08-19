@@ -730,3 +730,23 @@ h4 {
   bottom: 224px;
   right: 0;
 }
+
+/* faq page styles */
+.faq-section-main {
+  background: #f2f6ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.faq-accordion {
+  max-width: 1140px;
+  width: 100%;
+  margin: 30px 145px 96px;
+}
+.grey-dots-in-faq {
+  position: absolute;
+  bottom: -28px;
+  right: 10px;
+}
