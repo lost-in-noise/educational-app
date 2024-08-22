@@ -38,7 +38,10 @@
   .log-in {
     padding-right: 0.34rem;
   }
-
+  .search-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
   /* First Section */
 
   .section-one-div {
