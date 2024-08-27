@@ -239,7 +239,7 @@ const loadAllCourses = function (data) {
     </div>
     <div class="course-description-box">
       <h4 class="course-name">
-        ${course.courseName} ${course.date}
+        ${course.courseName}
       </h4>
       <div class="course-details">
         <div class="details-left">
