@@ -807,3 +807,21 @@ h4 {
   bottom: 53px;
   left: -14px;
 }
+
+/* successful students page styles */
+.successful-students-wrapper {
+  max-width: 1140px;
+  width: 100%;
+  margin: 30px 145px 96px;
+}
+.yellow-cycles-in-students {
+  position: absolute;
+  top: 133px;
+  right: -30px;
+}
+.student-card {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 4px 4px 4px 0px rgba(73, 73, 233, 0.15);
+  display: flex;
+}
