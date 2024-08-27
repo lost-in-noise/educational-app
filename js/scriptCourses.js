@@ -2,6 +2,7 @@
 const filtersEach = document.querySelectorAll(".filter-inner");
 const progbox = document.querySelectorAll(".prog-box");
 const allFilters = document.querySelectorAll(".each-prog");
+const sortFilters = document.querySelectorAll(".each-progs");
 const coursesBox = document.querySelector(".courses-inner-div");
 const eachCourseDiv = document.querySelector(".each-course");
 const pageNumber = document.querySelectorAll(".page-num");
@@ -10,12 +11,16 @@ const cleanAllFiltersBtn = document.querySelector(".clean-btn");
 const arrowUpList = document.querySelectorAll(".arrow-up");
 const arrowDownList = document.querySelectorAll(".arrow-down");
 const paginationDiv = document.querySelector(".pagination-div");
+const sortByDates = document.querySelectorAll(".sort-by-dates");
 const programsSet = new Set();
 const mentorsSet = new Set();
 const levelSet = new Set();
 const durationSet = new Set();
 const ratingsSet = new Set();
 let clickedNum = 1;
+let filteredDataGlobal;
+let originalData;
+
 function addFilterNames(filter) {
   const eachFilter = `<div class="each-filter-item">
        <span class="each-item">${filter}</span>
@@ -68,8 +73,15 @@ cleanAllFiltersBtn.addEventListener("click", function () {
     levelSet.clear();
     durationSet.clear();
     ratingsSet.clear();
+    clickedNum = 1;
     main();
     filterNames.innerHTML = "";
+  });
+  sortFilters.forEach((each) => {
+    each.children[0].classList.remove("hidden");
+    each.children[1].classList.add("hidden");
+    oldToNew = true;
+    newToOld = true;
   });
 });
 function removeFiltersXBtn() {
@@ -84,10 +96,20 @@ function removeFiltersXBtn() {
           eachFilter.children[1].classList.add("hidden");
         }
       });
-      // console.log(deleteFilter);
+      sortFilters.forEach((eachFilter) => {
+        if (eachFilter.children[2].textContent === deleteFilter) {
+          console.log("this");
+          eachFilter.children[0].classList.remove("hidden");
+          eachFilter.children[1].classList.add("hidden");
+          newToOld = true;
+          oldToNew = true;
+          loadAllCourses(originalData);
+        }
+      });
       if (programsSet.has(deleteFilter)) {
         programsSet.delete(deleteFilter);
         main();
+        // loadAllCourses(filteredDataGlobal);
       }
       if (mentorsSet.has(deleteFilter)) {
         mentorsSet.delete(deleteFilter);
@@ -173,6 +195,7 @@ allFilters.forEach((eachFilter) => {
         main();
       }
     }
+
     removeFiltersXBtn();
   });
 });
@@ -191,7 +214,6 @@ async function main() {
 main();
 
 const loadAllCourses = function (data) {
-  console.log(clickedNum);
   coursesBox.innerHTML = "";
   data.forEach((course, i) => {
     if (i >= (clickedNum - 1) * 12 && i < clickedNum * 12) {
@@ -217,7 +239,7 @@ const loadAllCourses = function (data) {
     </div>
     <div class="course-description-box">
       <h4 class="course-name">
-        ${course.courseName}
+        ${course.courseName} ${course.date}
       </h4>
       <div class="course-details">
         <div class="details-left">
@@ -263,19 +285,6 @@ const loadAllCourses = function (data) {
   clickHeart();
 };
 
-// pageNumber.forEach((pageNum) => {
-//   pageNum.addEventListener("click", function () {
-//     removeBackgr();
-//     pageNum.classList.add("active-page");
-//     const pageNumber = pageNum.textContent;
-//     fetchCoursesData(pageNumber);
-//   });
-// });
-
-function removeBackgr() {
-  // pageNumber.forEach((each) => each.classList.remove("active-page"));
-}
-
 function filterCourses(data) {
   const filteredData = data
     .filter((value, i) => {
@@ -298,10 +307,22 @@ function filterCourses(data) {
       if (ratingsSet.size === 0) return value;
       else return ratingsSet.has(value.rating);
     });
-  pageNumberAll(filteredData.length, filteredData);
-  loadAllCourses(filteredData);
+  pageNumberAll(filteredData.length);
+  filteredDataGlobal = [...filteredData];
+  originalData = [...filteredData];
+  document.querySelectorAll(".each-item").forEach((each) => {
+    if (each.textContent === "ახალი-ძველი") {
+      filteredDataGlobal.sort((a, b) => b.date - a.date);
+    }
+    if (each.textContent === "ძველი-ახალი") {
+      filteredDataGlobal.sort((a, b) => a.date - b.date);
+    }
+  });
+
+  loadAllCourses(filteredDataGlobal);
 }
-function pageNumberAll(cardNums, filteredData) {
+let numberOfPages;
+function pageNumberAll(cardNums) {
   paginationDiv.innerHTML = "";
   let pageNums = Math.ceil(cardNums / 12);
   for (let i = 0; i < pageNums; i++) {
@@ -311,11 +332,12 @@ function pageNumberAll(cardNums, filteredData) {
 `;
     paginationDiv.insertAdjacentHTML("beforeend", pagesBelow);
   }
-  pageNumClick(filteredData);
+  pageNumClick();
+  numberOfPages = pageNums;
   return pageNums;
 }
 
-function pageNumClick(filteredData) {
+function pageNumClick() {
   document.querySelectorAll(".page-num").forEach((eachNum) => {
     eachNum.addEventListener("click", function () {
       document.querySelectorAll(".each-page").forEach((each) => {
@@ -323,11 +345,38 @@ function pageNumClick(filteredData) {
       });
       eachNum.parentElement.classList.add("active-page");
       clickedNum = Number(eachNum.textContent);
-      console.log(clickedNum);
-      loadAllCourses(filteredData);
+      loadAllCourses(filteredDataGlobal);
     });
   });
 }
+document.querySelector(".arrow-left").addEventListener("click", function () {
+  if (clickedNum > 1) {
+    clickedNum--;
+    loadAllCourses(filteredDataGlobal);
+    document.querySelectorAll(".each-page").forEach((eachNum) => {
+      if (eachNum.textContent == clickedNum + 1) {
+        eachNum.classList.remove("active-page");
+      }
+      if (eachNum.textContent == clickedNum) {
+        eachNum.classList.add("active-page");
+      }
+    });
+  }
+});
+document.querySelector(".arrow-right").addEventListener("click", function () {
+  if (clickedNum < numberOfPages) {
+    clickedNum++;
+    loadAllCourses(filteredDataGlobal);
+    document.querySelectorAll(".each-page").forEach((eachNum) => {
+      if (eachNum.textContent == clickedNum - 1) {
+        eachNum.classList.remove("active-page");
+      }
+      if (eachNum.textContent == clickedNum) {
+        eachNum.classList.add("active-page");
+      }
+    });
+  }
+});
 function clickHeart() {
   document.querySelectorAll(".heart").forEach((heart) => {
     heart.addEventListener("click", function () {
@@ -335,3 +384,48 @@ function clickHeart() {
     });
   });
 }
+
+let newToOld = true;
+let oldToNew = true;
+
+sortByDates.forEach((eachSort) => {
+  eachSort.addEventListener("click", function () {
+    if (this.children[2].textContent === "ახალი-ძველი") {
+      if (newToOld) {
+        filteredDataGlobal.sort((a, b) => b.date - a.date);
+        loadAllCourses(filteredDataGlobal);
+        newToOld = !newToOld;
+        oldToNew = true;
+        addFilterNames(this.children[2].textContent);
+        removeFilterNames(this.nextElementSibling.children[2].textContent);
+      } else {
+        loadAllCourses(originalData);
+        newToOld = !newToOld;
+        removeFilterNames(this.children[2].textContent);
+      }
+
+      this.nextElementSibling.children[0].classList.remove("hidden");
+      this.nextElementSibling.children[1].classList.add("hidden");
+      this.children[0].classList.toggle("hidden");
+      this.children[1].classList.toggle("hidden");
+    } else if (this.children[2].textContent === "ძველი-ახალი") {
+      if (oldToNew) {
+        filteredDataGlobal.sort((a, b) => a.date - b.date);
+        loadAllCourses(filteredDataGlobal);
+        oldToNew = !oldToNew;
+        newToOld = true;
+        addFilterNames(this.children[2].textContent);
+        removeFilterNames(this.previousElementSibling.children[2].textContent);
+      } else {
+        loadAllCourses(originalData);
+        oldToNew = !oldToNew;
+        removeFilterNames(this.children[2].textContent);
+      }
+      this.previousElementSibling.children[0].classList.remove("hidden");
+      this.previousElementSibling.children[1].classList.add("hidden");
+      this.children[0].classList.toggle("hidden");
+      this.children[1].classList.toggle("hidden");
+    }
+    removeFiltersXBtn();
+  });
+});

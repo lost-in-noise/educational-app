@@ -221,6 +221,162 @@
       "stars": "⭐⭐",
       "rating": "2.0",
       "img": "images/courses/9.png"
+    },
+    {
+      "id": 20,
+      "courseName": "3D ბლენდერი",
+      "mentor": "ეკატერინე ბერიძე",
+      "level": "პროფესიონალი",
+      "timeframe": "12 თვე",
+      "date": 2023,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/7.png"
+    },
+    {
+      "id": 21,
+      "courseName": "UI/UX დიზაინი",
+      "mentor": "საბა ახალკაცი",
+      "level": "დამწყები",
+      "timeframe": "1 თვე",
+      "date": 2018,
+      "stars": "⭐⭐⭐",
+      "rating": "3.0",
+      "starSrc": "images/courses/star.svg",
+      "img": "images/courses/1.png"
+    },
+    {
+      "id": 22,
+      "courseName": "Front-End Development",
+      "mentor": "ეკატერინე ბერიძე",
+      "level": "დამწყები",
+      "timeframe": "3 თვე",
+      "date": 2020,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/2.png"
+    },
+    {
+      "id": 23,
+      "courseName": "Back-End Development",
+      "mentor": "ალექსანდრე ანდრონიკაშვილი",
+      "level": "დამწყები",
+      "timeframe": "6 თვე",
+      "date": 2016,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/3.png"
+    },
+    {
+      "id": 24,
+      "courseName": "გრაფიკული დიზაინი",
+      "mentor": "მარიამ მელიქიძე",
+      "level": "დამწყები",
+      "timeframe": "3 თვე",
+      "date": 2024,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/4.png"
+    },
+    {
+      "id": 25,
+      "courseName": "3D ბლენდერი",
+      "mentor": "მარიამ მელიქიძე",
+      "level": "დამწყები",
+      "timeframe": "6  თვე",
+      "date": 2023,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/5.png"
+    },
+    {
+      "id": 26,
+      "courseName": "Front-End Development",
+      "mentor": "ნიკოლოზ ხეჩინაშვილი",
+      "level": "დამწყები",
+      "timeframe": "3 თვე",
+      "date": 2021,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/6.png"
+    },
+    {
+      "id": 27,
+      "courseName": "3D ბლენდერი",
+      "mentor": "ეკატერინე ბერიძე",
+      "level": "საშუალო",
+      "timeframe": "3 თვე",
+      "date": 2023,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/7.png"
+    },
+    {
+      "id": 28,
+      "courseName": "UI/UX დიზაინი",
+      "mentor": "საბა ახალკაცი",
+      "level": "პროფესიონალი",
+      "timeframe": "9 თვე",
+      "date": 2023,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "starSrc": "images/courses/star.svg",
+      "img": "images/courses/8.png"
+    },
+    {
+      "id": 29,
+      "courseName": "გრაფიკული დიზაინი",
+      "mentor": "ალექსანდრე ანდრონიკაშვილი",
+      "level": "საშუალო",
+      "timeframe": "6 თვე",
+      "date": 2024,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/9.png"
+    },
+    {
+      "id": 30,
+      "courseName": "Back-End Development",
+      "mentor": "ალექსანდრე ანდრონიკაშვილი",
+      "level": "პროფესიონალი",
+      "timeframe": "9 თვე",
+      "date": 2023,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/10.png"
+    },
+    {
+      "id": 31,
+      "courseName": "გრაფიკული დიზაინი",
+      "mentor": "ალექსანდრე ანდრონიკაშვილი",
+      "level": "პროფესიონალი",
+      "timeframe": "3 თვე",
+      "date": 2024,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/11.png"
+    },
+    {
+      "id": 32,
+      "courseName": "Front-End Development",
+      "mentor": "საბა ახალკაცი",
+      "level": "საშუალო",
+      "timeframe": "6 თვე",
+      "date": 2024,
+      "stars": "⭐⭐⭐⭐⭐",
+      "rating": "5.0",
+      "img": "images/courses/12.png"
+    },
+    {
+      "id": 33,
+      "courseName": "Back-End Development",
+      "mentor": "ალექსანდრე ანდრონიკაშვილი",
+      "level": "დამწყები",
+      "timeframe": "3 თვე",
+      "date": 2021,
+      "stars": "⭐⭐⭐⭐",
+      "rating": "4.0",
+      "img": "images/courses/10.png"
     }
   ]
 }
