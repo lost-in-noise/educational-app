@@ -758,6 +758,7 @@ h4 {
   align-items: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
 }
 .about_us_wrapper {
   max-width: 1240px;
@@ -881,3 +882,28 @@ h4 {
   justify-content: space-between;
 }
 
+.pagination-for-students {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page-numbers {
+  display: flex;
+  gap: 5px;
+}
+
+.page-number {
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.page-number:hover {
+  background-color: #e0e0e0;
+}
+
+.page-number.active {
+  background-color: #3366ff; 
+  color: #fff; 
+}
