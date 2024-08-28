@@ -809,12 +809,11 @@ h4 {
   left: -14px;
 }
 
-
 /* successful students page styles */
 .successful-students-wrapper {
   max-width: 1248px;
   width: 100%;
-  margin: 56px 70px 60px;
+  margin: 56px 70px 40px;
   z-index: 15;
   display: flex;
   justify-content: space-between;
@@ -881,29 +880,52 @@ h4 {
   display: flex;
   justify-content: space-between;
 }
-
 .pagination-for-students {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+.page-numbers {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.page-numbers {
-  display: flex;
-  gap: 5px;
-}
-
 .page-number {
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer; 
+  width: 38px;
+  height: 38px;
+  border-radius: 18.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #dee7ff;
+  color: #000;
 }
-
 .page-number:hover {
   background-color: #e0e0e0;
 }
-
 .page-number.active {
-  background-color: #3366ff; 
-  color: #fff; 
+  background-color: #5b5bfd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+#prev {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+#next {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
 }
