@@ -111,6 +111,9 @@ body {
 .login-btn:hover {
   cursor: pointer;
 }
+.learn-more-btn a {
+  color: #1d1929;
+}
 
 /* SECTION 1 */
 .section-one {
