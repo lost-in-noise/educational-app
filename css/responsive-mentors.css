@@ -1,0 +1,92 @@
+@media all and (max-width: 780px) {
+    .mentors-page-circles,
+    .mentors-page-heding-nav,
+    .mentors-page-dots {
+        display: none;
+    }
+    .mentors-page-responsive-circles,
+    .mentors-page-arrow,
+    .mentors-page-responsive-dots {
+    display: flex;
+}
+.mentors-page-heading {
+    margin-top: -4rem;
+}
+    .mentors-page-heading-div {
+        height: 68px;
+    }
+    .mentors-page-h1 {
+        font-size: 20px;
+    }
+    .mentors-page-responsive-circles {
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .mentors-page-arrow {
+        position: absolute;
+        transform: translate(87%, 20%);
+    }
+    .mentors-page-filter-names {
+        height: fit-content;
+        justify-content: flex-start;
+        display: flex;
+        margin-top: 9.4rem;
+        margin-left: 38px;
+        display: flex;
+        flex-direction: column;
+    }
+    .mentors-page-filter-div {
+        display: none;
+    }
+    .responsive-filter-btn {
+        display: flex;
+    }
+    .filter-clear {
+        display: none;
+    }
+    .checked-bullets {
+        width: 100%;
+        height: 20px;
+        margin: 0 16px 0  18px;
+        gap: 0;
+        white-space: nowrap;
+    }
+    .bullet-item {
+        font-size: 12px;
+        padding: 5px 4px 4px 8px;
+        display: flex;
+        justify-content: center;
+    }
+    .bullet-li {
+        font-size: 12px;
+    }
+    .selected-filter {
+        gap: 0;
+        height: 20px;
+    }
+    .filtered-data-div {
+        align-items: center;
+    }
+    .second-row {
+        display: none;
+    }
+    .third-row {
+        display: none;
+    }
+    .people-with-background {
+        justify-content: center;
+        display: flex;
+    }
+    .pages-btns {
+        margin-top: 34px;
+    }
+    .page {
+        height: 100%;
+    }
+    .person-box {
+        margin: 12px;
+    }
+    .first-row {
+        gap: 0;
+    }
+}
