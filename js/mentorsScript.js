@@ -232,10 +232,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle button click event
     buttons.forEach(btn => {
-    const grayVectorL = '../images/mentors-page/people-vector-left0.svg'
-    const blackVectorL =   '../images/mentors-page/page-btns-vector-left.svg'
-    const grayVectorR = '../images/mentors-page/people-vector-right0.svg'
-    const blackVectorR =   '../images/mentors-page/pages-btns-vector-right.svg'
+    const blackVectorL = '../images/mentors-page/people-vector-left0.svg'
+    const blackVectorR = '../images/mentors-page/people-vector-right0.svg'
+    const grayVectorL =   '../images/mentors-page/page-btns-vector-left.svg'
+    const grayVectorR =   '../images/mentors-page/page-btns-vector-right.svg'
     const imgL = document.querySelector("#vector-left")
     const imgR = document.querySelector("#vector-right")
         btn.addEventListener("click", () => {
