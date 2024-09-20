@@ -206,7 +206,7 @@
   }
   .about_us_info {
     max-width: 716px;
-    width: 100%;
+    width: 95%;
     row-gap: 10px;
   }
   .about_us_info p {
