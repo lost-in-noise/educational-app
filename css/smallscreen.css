@@ -152,11 +152,16 @@
   .soc-icons img {
     width: 17.5px;
   }
-  .breadcrumbs-div {
+  .breadcrumbs-div,
+  .yellow-arrow-about_us,
+  .grey-dots-about_us,
+  .grey-cycles-about_us,
+  .codewise_sign_desktop {
     display: none;
   }
   .rec-title-h2 {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 18px;
   }
   .yellow-dots-in-rec-baner-img {
     max-width: 138px;
@@ -164,9 +169,10 @@
   }
   .yellow-dots-in-rec-baner {
     margin-top: 0px;
+    margin-right: -36px;
   }
   .yellow-circles-in-rec-baner-img {
-    max-width: 98px;
+    max-width: 97.5px;
     width: 100%;
   }
   .yellow-circles-in-rec-baner {
@@ -175,11 +181,37 @@
   }
   .rec-title-baner {
     height: 68px;
+    margin-top: 4.2rem;
   }
   .white_arrow_with_circle {
     display: block;
     position: absolute;
-    left: 35px;
+    left: 34px;
+    max-width: 40px;
+  }
+  .about_us_wrapper {
+    flex-direction: column;
+    row-gap: 19px;
+    margin: 18px 16.5px 42px 16px;
+  }
+  .codewise_sign_mobile {
+    display: block;
+    max-width: 342.5px;
+    width: 100%;
+  }
+  .about_us_info h3 {
+    font-size: 24px;
+    line-height: 24px;
+    font-family: "BPG Glaho", sans-serif;
+  }
+  .about_us_info {
+    max-width: 716px;
+    width: 100%;
+    row-gap: 10px;
+  }
+  .about_us_info p {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
 @media (max-width: 575px) {
