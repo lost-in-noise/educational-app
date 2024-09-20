@@ -758,6 +758,7 @@ h4 {
   align-items: center;
   position: relative;
   overflow: hidden;
+  flex-direction: column;
 }
 .about_us_wrapper {
   max-width: 1240px;
@@ -807,9 +808,132 @@ h4 {
   bottom: 53px;
   left: -14px;
 }
+
 .white_arrow_with_circle {
   display: none;
 }
 .codewise_sign_mobile {
   display: none;
 }
+
+
+/* successful students page styles */
+.successful-students-wrapper {
+  max-width: 1248px;
+  width: 100%;
+  margin: 56px 70px 40px;
+  z-index: 15;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.yellow-cycles-in-students {
+  position: absolute;
+  top: 133px;
+  right: 0px;
+}
+.student-card {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 4px 4px 4px 0px rgba(73, 73, 233, 0.15);
+  display: flex;
+  padding-left: 27px;
+  padding-right: 20px;
+}
+.student-card h3 {
+  color: #000;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.student-card p {
+  color: #000;
+  font-family: "BPG Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.student-main-data {
+  display: flex;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  column-gap: 32px;
+}
+.student-pics {
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 14px;
+  padding-left: 42px;
+  gap: 7px;
+  align-items: center;
+  justify-content: center;
+}
+.student-info-text {
+  width: 510px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.student-3-pics {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.student-2-pics {
+  display: flex;
+  justify-content: space-between;
+}
+.pagination-for-students {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 60px;
+}
+.page-numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.page-number {
+  width: 38px;
+  height: 38px;
+  border-radius: 18.5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "BPG Nino Mtavruli", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #dee7ff;
+  color: #000;
+}
+.page-number:hover {
+  background-color: #e0e0e0;
+}
+.page-number.active {
+  background-color: #5b5bfd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+button[disabled] {
+  cursor: not-allowed;
+}
+
