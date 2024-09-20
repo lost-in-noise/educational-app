@@ -152,6 +152,35 @@
   .soc-icons img {
     width: 17.5px;
   }
+  .breadcrumbs-div {
+    display: none;
+  }
+  .rec-title-h2 {
+    font-size: 20px;
+  }
+  .yellow-dots-in-rec-baner-img {
+    max-width: 138px;
+    width: 100%;
+  }
+  .yellow-dots-in-rec-baner {
+    margin-top: 0px;
+  }
+  .yellow-circles-in-rec-baner-img {
+    max-width: 98px;
+    width: 100%;
+  }
+  .yellow-circles-in-rec-baner {
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .rec-title-baner {
+    height: 68px;
+  }
+  .white_arrow_with_circle {
+    display: block;
+    position: absolute;
+    left: 35px;
+  }
 }
 @media (max-width: 575px) {
   .review-card:nth-child(3) {
