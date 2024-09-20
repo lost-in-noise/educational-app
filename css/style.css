@@ -809,6 +809,14 @@ h4 {
   left: -14px;
 }
 
+.white_arrow_with_circle {
+  display: none;
+}
+.codewise_sign_mobile {
+  display: none;
+}
+
+
 /* successful students page styles */
 .successful-students-wrapper {
   max-width: 1248px;
@@ -928,3 +936,4 @@ button {
 button[disabled] {
   cursor: not-allowed;
 }
+
