@@ -47,6 +47,10 @@ body {
   line-height: 12px;
   margin: 2.2rem 0 0 31.2rem;
 }
+.index-link:link,
+.index-link:visited {
+  color: #fff;
+}
 /* Section TWO */
 .section-two-courses {
   border-bottom: 1px solid #9099da;
@@ -76,10 +80,12 @@ body {
 }
 .programs-span:hover,
 .arrow-span:hover,
-.each-prog:hover {
+.each-prog:hover,
+.sort-by-dates:hover {
   cursor: pointer;
 }
-.each-prog:hover {
+.each-prog:hover,
+.sort-by-dates:hover {
   background-color: rgb(231, 231, 221);
 }
 .programs-span {
@@ -126,7 +132,8 @@ body {
 .rating {
   margin-right: 1rem;
 }
-.each-prog {
+.each-prog,
+.sort-by-dates {
   display: flex;
   gap: 1rem;
   padding: 0.5rem;

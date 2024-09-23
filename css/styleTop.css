@@ -111,6 +111,9 @@ body {
 .login-btn:hover {
   cursor: pointer;
 }
+.learn-more-btn a {
+  color: #1d1929;
+}
 
 /* SECTION 1 */
 .section-one {
@@ -234,14 +237,14 @@ body {
 .next-btn-div-left {
   position: absolute;
   top: 50%;
-  left: -2.1%;
+  left: -2.8rem;
   transform: translate(-50%, -50%);
 }
 
 .next-btn-div-right {
   position: absolute;
   top: 50%;
-  right: -5%;
+  right: -5.3%;
   transform: translate(-50%, -50%);
 }
 .left-btn,
@@ -289,17 +292,17 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
-  padding: 3.3rem 0 3rem 0;
+  padding: 6rem 0 3rem 0;
 }
 .sect-three-container {
-  max-width: 134rem;
+  max-width: 124rem;
   margin: 0 auto;
   position: relative;
 }
 .yellow-dots {
   position: absolute;
   top: -22.5%;
-  right: -4%;
+  right: -7%;
   /* z-index: 1000; */
 }
 .left-circles {
@@ -309,8 +312,9 @@ body {
 }
 .right-circles {
   position: absolute;
-  right: -4.5%;
-  bottom: -15%;
+  /* right: -4.5%; */
+  right: -6rem;
+  bottom: -19.5%;
 }
 .each-course {
   padding: 2.3rem 2.5rem 2.3rem 2.6rem;
@@ -413,6 +417,7 @@ body {
   margin-top: 2.09rem;
 }
 .details-btn {
+  box-shadow: 4px 4px 10px 0px rgba(73, 73, 233, 0.25);
   height: 3.2rem;
   width: 16.7rem;
   border: none;

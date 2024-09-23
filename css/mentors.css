@@ -1,0 +1,307 @@
+a {
+    color: unset;
+}
+button {
+    background:none;
+    border: none;
+}
+#mentors-page-mentors {
+    color: #4949E9;
+}
+/* heading */
+.mentors-page-heading {
+    background-color: #4949E9;
+    top: 8rem;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+.mentors-page-heading-div {
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 111px;
+    max-width: 1440px;
+}
+.mentors-page-circles {
+    margin: 25px 0 0 81px;
+}
+.mentors-page-heding-nav {
+    color: white;
+    font-size: 12px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    margin-left: 26px;
+    margin-bottom: 10px;
+    margin-top: auto;
+}
+.mentors-page-h1 {
+    color: white;
+    font-size: 32px;
+    font-family: "BPG Mrgvlovani Caps 2010", sans-serif;
+    font-weight: normal;
+    margin: auto;
+    align-self: center;
+}
+.mentors-page-dots {
+    display: flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: -50px;
+}
+
+.mentors-page-responsive-circles,
+.mentors-page-arrow,
+.mentors-page-responsive-dots {
+    display: none;
+}
+.responsive-div-main-heading {
+    width: 45%;
+    margin: auto;
+    font-size: 18px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    color: #494AE9;
+    font-weight: normal;
+    margin-bottom: 9px;
+    margin-top: 16px;
+}
+.responsive-div-heading {
+    font-size: 16px;
+    color: white;
+    background-color: #494AE9;
+    width: 100%;
+    height: 28px;
+    font-weight: normal;
+    padding-left: 23px;
+    margin-bottom: 14px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    align-items: center;
+    display: flex;
+}
+
+
+.responsive-filter-btn-div {
+    width: 254px;
+    margin-left: 38px;
+    /* display: none; */
+  }
+
+/*  */
+.mentors-page-filter-names {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    height: 68px;
+}
+.mentors-page-filter-div {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    margin-top: 5.8rem;
+    height: 68px;
+    box-shadow: 0px 4px 20px 0px #AEC5FF80;
+    border-bottom: 1px solid #9099DA;
+    justify-content: center;
+}
+.shadow {
+    margin-left: 101px;
+    display: flex;
+    gap: 36px;
+    margin-top: 25px;
+    width: 1440px;
+}
+.mentors-page-filter-name {
+    font-size: 23px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    height: 20px;
+}
+.mentors-page-vector {
+    margin-left: 8px;
+}
+.mentors-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.drop-down-list {
+    padding: 0 19px 22px 28px;
+    color: #9099DA;
+    cursor: pointer;
+    font-size: 16px;
+    row-gap:  12px;
+    display: flex;
+    flex-direction: column;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    background-color: white;
+    z-index: 1;
+    margin: 20px 0 0 0;
+}
+.programs-options-bullets {
+    margin-right: 10px;
+}
+.drop-down-options {
+    display: none;
+}
+.responsive-filter-btn {
+    display: none;
+    width: 28px;
+    height: 28px;
+}
+.filtering-section {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+.checked-bullets {
+    width: 1440px;
+    height: 56px;
+    margin-top: 8rem;
+    margin-left: 100.5px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.selected-filter {
+    font-size: 20px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    gap: 24px;
+    color: #7C88E0;
+    display: none; 
+    height: 38px;
+    flex-direction: row-reverse;
+ }
+ .bullet-item {
+    border: 1px solid #DEE0F6; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+.cancel-image {
+    margin-left: 16px;
+}
+.hide-original {
+    display: none;
+}
+.filter-clear {
+    color: #7C88E0;
+    font-size: 24px;
+    border: 1px solid #9099DA;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: "BPG Nino Mtavruli", sans-serif;
+    cursor: pointer;
+    margin-right: 111px;
+    margin-left: auto;
+}
+.people-with-background {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    width: 1320px;  
+    display: -webkit-box;
+}
+
+
+
+.page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8 .page9, .page10 {
+    display: flex;
+}
+.page2, .page3, .page4, .page5, .page6, .page7, .page8, .page9, .page10 {
+    display: none;
+}
+
+.filtered-people {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    height: 850px;
+}
+.pages-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+.page-btn {
+    font-size: 18px;
+    border: 1px solid #DEE7FF;
+    border-radius: 50%;
+    background-color: #DEE7FF;
+    padding: 12px 14.5px;
+}
+.dots {
+    font-size: 18px;
+}
+.page-btn.purple {
+    background-color: #5B5BFD;
+    color: white;
+}
+.people-circle-right {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    z-index: -1;
+}
+.first-row,
+.second-row,
+.third-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.people-dots-left {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 350px;
+}
+.people-circle-left {
+    position: absolute;
+    z-index: -1;
+    left: 20px;
+    top: 600px;
+}
+.poeple-dots-right {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: 550px;
+}
+.people-circle-right, .people-dots-left, .people-circle-left, .poeple-dots-right {
+    display: flex;
+}
+.result-container {
+    display: flex;
+    flex-direction: column;
+}
+
+  .mian-vector {
+    margin: 0 6px;
+  }
+  .filtered-data-div {
+    display: flex;
+    flex-direction: row;
+    margin-left: 38px;
+  }
+  .bullet-item {
+    padding: 10px 13px 10px 8px;
+    margin-right: 24px;
+  }
+  .responsive-filter-btn-div {
+    display: none;
+  }
+  .responsive-filter-btn-div {
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+}
