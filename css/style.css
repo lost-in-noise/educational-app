@@ -619,10 +619,18 @@ h4 {
   height: 111px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
-  position: relative;
   margin-top: 80px;
+}
+.title-baner-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  height: 111px;
 }
 .rec-title-h2 {
   color: #fff;
@@ -659,7 +667,6 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 .rec-section-main-wrapper {
   display: flex;
@@ -669,7 +676,8 @@ h4 {
   flex-wrap: wrap;
   align-content: space-between;
   gap: 40px;
-  z-index: 15;
+  position: relative;
+  height: 768px;
 }
 .student-rec-card {
   display: flex;
@@ -681,6 +689,7 @@ h4 {
   border-radius: 6px;
   background: #fff;
   box-shadow: 0px 4px 4px 0px #dde7ff;
+  z-index: 30;
 }
 .student-avatar-name-stars {
   display: flex;
@@ -718,17 +727,18 @@ h4 {
   margin-top: 24px;
 }
 .yellow-dots-in-rec-baner {
-  margin-top: 24px;
+  margin-top: 25.44px;
+  margin-right: -50px;
 }
 .grey-cycles-inrec {
   position: absolute;
-  bottom: 104px;
-  left: -114px;
+  bottom: 34px;
+  left: -217px;
 }
 .grey-dots-inrec {
   position: absolute;
-  bottom: 224px;
-  right: 0;
+  bottom: 154.16px;
+  right: -123.39px;
 }
 
 /* faq page styles */
