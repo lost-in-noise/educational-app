@@ -751,14 +751,27 @@ h4 {
   overflow: hidden;
 }
 .faq-accordion {
-  max-width: 1140px;
+  max-width: 1151px;
   width: 100%;
-  margin: 30px 145px 96px;
+  margin: 30px 0 96px;
+}
+.faq-accordion-container {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .grey-dots-in-faq {
   position: absolute;
-  bottom: -28px;
-  right: 10px;
+  bottom: -11.16px;
+  right: 10.16px;
+}
+.grey-cycles-in-faq {
+  position: absolute;
+  left: -114px;
+  bottom: 104px;
 }
 /* about us page styles */
 .about_us-section {
@@ -835,7 +848,6 @@ h4 {
   align-items: center;
   flex-direction: column;
   row-gap: 40px;
-  
 }
 .success-students-container {
   max-width: 1300px;
