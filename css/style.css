@@ -779,7 +779,6 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   overflow: hidden;
   flex-direction: column;
 }
@@ -792,6 +791,14 @@ h4 {
   align-items: center;
   margin: 90px 100px 100px;
   z-index: 16;
+}
+.about_us_container {
+  max-width: 1440px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about_us_info {
   display: flex;
@@ -824,12 +831,12 @@ h4 {
 .grey-cycles-about_us {
   position: absolute;
   bottom: 30px;
-  right: -30px;
+  right: -29.76px;
 }
 .grey-dots-about_us {
   position: absolute;
-  bottom: 53px;
-  left: -14px;
+  bottom: 53.16px;
+  left: -16px;
 }
 .white_arrow_with_circle {
   display: none;
